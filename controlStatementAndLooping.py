@@ -128,22 +128,37 @@ lst = []
     
 # print(count)
 
-lst = []
+# lst = []
 
-def isPrime(n):
-    count = 0
-    for i in range(1,n+1):
-        if(n%i==0):
-            count += 1
+# def isPrime(n):
+#     count = 0
+#     for i in range(1,n+1):
+#         if(n%i==0):
+#             count += 1
 
-    if(count == 2):
-        return True
-    else:
-        return False
+#     if(count == 2):
+#         return True
+#     else:
+#         return False
 
-print(isPrime(2))
-# for i in range(1,101):
-#     if(isPrime(i)):
-#         lst.append(i)
+# print(isPrime(2))
+# # for i in range(1,101):
+# #     if(isPrime(i)):
+# #         lst.append(i)
 
-print(lst)
+# print(lst)
+
+#list comprehension
+# [expression for item in iterable]
+
+# print([i for i in range(5)])
+
+# print([i for i in range(10) if i%2==0])
+
+print([i if i%2==0 else 2 for i in range(20)])
+print([i for i in range(10) if i > 5 ])
+print([i if i>0  else 0 for i in range(10,-10,-1)])
+lst = ["shit", "sjs", "sj", "jhdsfh", "uih"]
+print([i for i in lst if len(i)>3])
+# print(("E" if i%2==0 else "O" for i in range(1,10)))
+print([i for i in range(20) if i % 2 == 0 and i % 3 == 0])

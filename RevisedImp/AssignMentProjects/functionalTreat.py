@@ -67,4 +67,3 @@ while True:
         case 7:
             print("Thank you for using Data Analyzer and Transformer Program. Goodby!")
             break
-            
